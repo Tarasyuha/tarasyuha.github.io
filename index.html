@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2 by Taras Khomitskyi</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js"></script>
+</head>
+<body>
+<!--Create a function that changes the background color of a webpage when a button is clicked. (2.5 points)-->
+<h1>1. Create a function that changes the background color of a webpage when a button is clicked. (2.5 points)</h1>
+<div id="changeColor">
+  <h1 id="colorh1">Hello Ahmet</h1>
+</div>
+<br>
+<button onclick="changeColor()">Change color / Change back</button> 
+
+
+<!--Create a function that dynamically adds a new list item to an unordered list when a button is pressed. (2.5 points)-->
+<h1>2. Create a function that dynamically adds a new list item to an unordered list when a button is pressed. (2.5 points)</h1>
+<ul id="list">
+    <li id="element1">One</li>
+    <li id="element2">Two</li>
+    <li id="element3">Three</li>
+</ul>
+<button onclick="addElement()">Add new Element to the list</button>
+
+
+<!--Create a function that toggles the visibility of a paragraph when a button is clicked. (2.5 points)-->
+<h1>3. Create a function that toggles the visibility of a paragraph when a button is clicked. (2.5 points)</h1>
+<div id="toggle">
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</div>
+<button onclick="hidetext()">Hide / Show the text</button>
+
+
+<!--Create a function that changes the text of a heading when the mouse is hovered over it. (2.5 points)-->
+<h1>4. Create a function that changes the text of a heading when the mouse is hovered over it. (2.5 points)</h1>
+<h2 id="changetext" onmouseover="mouseOver()" onmouseout="mouseOut()">Point your mouse here</h2>
+
+
+</body>
+</html>
