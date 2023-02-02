@@ -51,7 +51,6 @@ button {
     height: 30px;
     width: 400px;
     border: solid 4px black;
-    float: left;
     padding: 20px;
     background-color: lightblue;
     font-size: 30px;
@@ -60,4 +59,15 @@ button {
 
 button:hover {
     background-color: black;
+}
+
+#github {
+    text-align: center;
+    font-size: 60px;
+    color: coral;
+    text-decoration:overline;
+}
+
+#githubspan {
+    color: brown;
 }
