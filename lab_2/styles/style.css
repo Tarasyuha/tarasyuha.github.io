@@ -1,6 +1,6 @@
 body {
     background-color: rgb(62, 62, 62);
-    margin-left: 60px;
+    margin-left: 50px;
 }
 
 #changeColor {
@@ -64,10 +64,16 @@ button:hover {
 #github {
     text-align: center;
     font-size: 60px;
-    color: coral;
-    text-decoration:overline;
+    color: rgb(22, 22, 22);
+    font-weight: bold;
 }
 
 #githubspan {
-    color: brown;
+    color: rgb(255, 255, 255);
+    background-color: rgb(18, 18, 18);
+    padding-right: 10px;
+}
+
+#gitlogo {
+    padding-left: 10px;
 }
