@@ -9,7 +9,7 @@ body {
     background-color: coral;
     text-align: center;
     color: lightblue;
-    border: solid 4px  black;
+    border: solid 2px  black;
     box-shadow: 0 0 70px lightblue;
     margin: 50px 0 50px 0;
     border-radius: 20px;
@@ -59,12 +59,14 @@ button {
 #changetext {
     height: 30px;
     width: 400px;
-    border: solid 4px black;
+    border: solid 2px black;
     padding: 20px;
     background-color: lightblue;
     font-size: 30px;
     text-align: center;
     box-shadow: 0 0 70px rgba(255, 255, 255, 0.4);
+    cursor: default;
+    border-radius: 10px;
 }
 
 button:hover {
@@ -82,9 +84,11 @@ button:hover {
 
 #githubspan {
     color: rgb(255, 255, 255);
-    background-color: rgb(18, 18, 18);
+    background-color: rgb(30, 30, 30);
     padding-right: 10px;
     font-size: 80px;
+    box-shadow: 0 0 70px rgba(255, 255, 255, 0.4);
+    cursor: default;
 }
 
 #gitlogo {
@@ -99,13 +103,10 @@ ul {
     list-style-type: none;
 }
 
-#githubspan {
-    box-shadow: 0 0 70px rgba(255, 255, 255, 0.4);
-}
-
 #githubspan:hover {
     box-shadow: 0 0 70px coral;
     cursor: default;
+    color: rgb(255, 127, 80);
 }
 
 
