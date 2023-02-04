@@ -89,6 +89,8 @@ button:hover {
     font-size: 80px;
     box-shadow: 0 0 70px rgba(255, 255, 255, 0.4);
     cursor: default;
+    border: solid 0px black;
+    border-radius: 40px;
 }
 
 #gitlogo {
@@ -107,9 +109,4 @@ ul {
     box-shadow: 0 0 70px coral;
     cursor: default;
     color: rgb(255, 127, 80);
-}
-
-
-.gdhdfh {
-    color:#ff9e62
 }
