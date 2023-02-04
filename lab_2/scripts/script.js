@@ -1,18 +1,10 @@
 function changeColor() {
   var col = document.getElementById("changeColor");
   var col2 = document.getElementById("colorh1");
-  if (col.style.backgroundColor === "lightblue") {
-    col.style.backgroundColor = "coral";
-    col.style.boxShadow = "0 0 120px coral";
-  }else {
-    col.style.backgroundColor = "lightblue";
-    col.style.boxShadow = "0 0 120px lightblue";
-  }
-  if (col.style.backgroundColor === "lightblue") {
-    col2.style.color = "coral";
-  }else {
-    col2.style.color = "lightblue";
-  }
+  if (col.style.backgroundColor === "lightblue") {col.style.backgroundColor = "coral"; col.style.boxShadow = "0 0 120px coral";}
+  else {col.style.backgroundColor = "lightblue";                                       col.style.boxShadow = "0 0 120px lightblue";}
+  if (col.style.backgroundColor === "lightblue") {col2.style.color = "coral";}
+  else {col2.style.color = "lightblue";}
 }
 
 function addElement() {
