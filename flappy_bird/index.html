@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flappy Bird</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <div id="game">
+    <div id="pressSpace" class="hidden">Press Space button</div>
+    <div id="score_text">Score: <span id="score">0</span></div>
+    <div id="bird"></div>
+    <div id="startContainer" class="menu-container">
+      <h1>Flappy Bird</h1>
+      <div id="record">Max Score: <span id="maxscore">0</span></div>
+      <button id="startBtn" onclick="startGame()">PLAY</button>
+    </div>
+    <div id="gameover" class="hidden center-container">
+      <h1>Game Over</h1>
+      <div id="currentscore_text">Your Score: <span id="currentscore">0</span></div>
+      <button id="menuBtn" onclick="openMenu()">MENU</button>
+    </div>
+  </div>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
