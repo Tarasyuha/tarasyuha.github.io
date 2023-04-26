@@ -1,0 +1,352 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+#game {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 40px;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#bird {
+    display: none;
+    position: absolute;
+    width: 80px;
+    height: 70px;
+    background-image: url("../images/bird.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 4;
+}
+
+.pipe {
+    position: absolute;
+    background-image: url("../images/pipe\ body.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 50px;
+    min-width: 50px;
+    z-index: 4 !important;
+    left: 100%;
+}
+
+.upper {
+    top: 0;
+    transform: rotateX(180deg);
+}
+
+.lower {
+    bottom: 0;
+}
+
+#score_text {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 48px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    z-index: 5 !important;
+    display: none;
+}
+
+#score {
+    font-size: 48px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    z-index: 5 !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#gameover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 0px solid black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 60px rgb(255, 255, 255);
+    z-index: 3;
+}
+
+#gameover h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#currentscore_text,
+#maxscore {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#menuBtn,
+#restartBtn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#menuBtn:hover,
+#restartBtn:hover {
+    background-color: #45a049;
+}
+
+.center-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+#startContainer h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#record {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.menu-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 0px solid black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 60px rgb(255, 255, 255);
+}
+
+#currentscore_text {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.menu-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.menu-button:hover {
+    background-color: #45a049;
+}
+
+.play-button {
+    padding: 15px 30px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    cursor: pointer;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    box-shadow: 0 0 30px #4CAF50;
+}
+
+.play-button:hover {
+    background-color: #45a049;
+}
+
+#pressSpace {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#game {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 40px;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#game img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+#testImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/background\ grass.png");
+    background-repeat: repeat;
+    background-size: cover;
+    z-index: 4;
+}
+
+#startContainer,
+#gameover {
+    z-index: 5;
+}
+
+#author {
+    position: absolute;
+    top: 96%;
+    left: 90%;
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    margin-right: 10px;
+    margin-top: 5px;
+    z-index: 5 !important;
+}
+
+#testImage {
+    position: absolute;
+    left: 0;
+    /* starting position */
+    top: 50%;
+    /* adjust the top position as per your requirement */
+    transform: translateY(-50%);
+    /* to vertically center the image */
+}
+
+.pipeLeft {
+    animation: moveLeft 30s linear infinite;
+    animation-play-state: running;
+}
+
+@keyframes moveLeft {
+    from {
+        left: 0%;
+        /* starting position */
+    }
+
+    to {
+        left: -100%;
+        /* end position */
+    }
+}
+
+.pipeLeft2 {
+    animation: moveLeft2 30s linear infinite;
+    animation-play-state: running;
+}
+
+@keyframes moveLeft2 {
+    from {
+        left: 100%;
+        /* starting position */
+    }
+
+    to {
+        left: 0%;
+        /* end position */
+    }
+}
+
+.paused {
+    animation-play-state: paused !important;
+}
+
+#level_text {
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    font-size: 36px;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    z-index: 5 !important;
+    display: none;
+}
+
+#timer {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    font-size: 36px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    z-index: 5 !important;
+    display: none;
+}
+
+h1, #maxscore, #record, #score, #score_text, #level_text, #timer, #author {
+    cursor: default;
+}
