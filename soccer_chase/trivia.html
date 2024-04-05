@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+<link rel="stylesheet" href="styles/trivia.css">
+<title>Trivia Game</title>
+
+</head>
+<body>
+<div id="welcome-container">
+  <h1>Welcome to The Trivia Game</h1>
+  <img class="welcome" src="images/welcome-image.svg" alt="welcome-image">
+  <p>You are about to start the soccer trivia game. Please press the next button if you want to test your knowledge and have fun!</p>
+  <a class="play" href="onboarding.html">How to Play?</a>
+  <button id="start-game-btn">Next</button>
+</div>
+
+<div id="difficulty-container" class="container">
+  
+  <div id="difficulty-heading">
+    <h2>Choose Difficulty</h2>
+  </div>
+
+  <div id="difficulty-buttons" class="buttons">
+
+    <div class="difficulty-container">
+      <button type="button" class="difficulty-button" id="easy-btn" value="easy">
+          <div><span class="material-symbols-outlined">sports_and_outdoors</span>
+        </div>
+      </button>
+      <div>Beginner</div>
+    </div>
+
+    <div class="difficulty-container">
+        <button type="button" class="difficulty-button" id="medium-btn" value="medium">
+          <div>
+            <span class="material-symbols-outlined">sports_and_outdoors</span>
+            <span class="material-symbols-outlined">sports_and_outdoors</span>
+          </div>
+        </button>
+        <div>Intermediate</div>
+    </div>    
+
+
+    <div class="difficulty-container">
+      <button type="button" class="difficulty-button" id="hard-btn" value="hard">
+        <div>
+          <span class="material-symbols-outlined">sports_and_outdoors</span>
+          <span class="material-symbols-outlined">sports_and_outdoors</span>
+          <span class="material-symbols-outlined">sports_and_outdoors</span>
+        </div>
+      </button>
+      <div>Expert</div>
+    </div>
+    
+    <div class="difficulty-container">
+      <button type="button" class="difficulty-button" id="random-btn" value="random">
+          <div>
+              <div><i class="material-icons-outlined">help_center</i></div>
+          </div>
+      </button>
+      <div>Random</div>
+  </div>  
+  
+</div>
+  <!--<button id="move-page-btn">Next</button>-->
+</div>
+
+
+<div class="main-category-container">
+    <div id="category-container" style="display: none;">
+      <h1 id="category-title"></h1>
+    <h2 class="category">Choose Category</h2>    
+
+ <div id="button-container">
+    <button id="previous">previous</button>
+    <button id="next">Next</button>
+  </div>
+  </div>
+</div>
+
+<div id="category-container"></div>
+
+<div id="question-container" style="display: none;">
+  <h2 id="question">Loading...</h2>
+  <div class="option" id="options"></div>
+</div>
+
+<div id="answer-container" style="display: none;">
+  <h2 id="answer-feedback"></h2>
+  <p id="points"></p>
+  <button id="next-question-btn">Next</button>
+</div>
+
+<div id="summary-container" style="display: none;">
+  <h2 class="points">Score</h2>
+  <img class="trophy" src="images/world-cup-trophy.svg" alt="World Cup Trophy">
+  <div class="score">
+    Final Score 
+    <div id="total-points">0</div>
+  </div>
+  <button id="redeem-points-btn" onclick="location.href='#'">Redeem Points</button></div>
+
+<footer>
+  <nav id="bottom-navbar">
+    <!-- Add your navbar items here -->
+    <a class="nav-item" href="home.html">
+      <div class="icon-text">
+        <i class="material-symbols-outlined">sports_and_outdoors</i>
+        <span>Home</span>
+      </div>
+    </a>
+    <a class="nav-item" href="score.html">
+      <div class="icon-text">
+        <i class="material-icons">emoji_events</i>
+        <span>Score</span>
+      </div>
+    </a>
+    <a class="nav-item" href="store.html">
+      <div class="icon-text">
+        <i class="material-icons">local_mall</i>
+        <span>Store</span>
+      </div>
+    </a>
+    <a class="nav-item" href="trivia.html">
+      <div class="icon-text">
+        <i class="material-icons">sports_esports</i>
+        <span>Game</span>
+      </div>
+    </a>
+  </nav>
+</footer>
+
+<script src="scripts/trivia.js"></script>
+
+</body>
+</html>
