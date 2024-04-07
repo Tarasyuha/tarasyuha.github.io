@@ -58,39 +58,7 @@ body {
     align-content: center;
 }
 
-.line_1 {
-    width: 42px;
-    height: 4px;
-    flex-shrink: 0;
-    border-radius: 5px;
-    background: #B1ADAD;
-}
-
-.line_2 {
-    width: 42px;
-    height: 4px;
-    flex-shrink: 0;
-    border-radius: 5px;
-    background: #B1ADAD;
-}
-
-.line_3 {
-    width: 42px;
-    height: 4px;
-    flex-shrink: 0;
-    border-radius: 5px;
-    background: #B1ADAD;
-}
-
-.line_4 {
-    width: 42px;
-    height: 4px;
-    flex-shrink: 0;
-    border-radius: 5px;
-    background: #B1ADAD;
-}
-
-.line_5 {
+.line_1, .line_2, .line_3, .line_4, .line_5 {
     width: 42px;
     height: 4px;
     flex-shrink: 0;
