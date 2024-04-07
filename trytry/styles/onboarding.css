@@ -12,8 +12,8 @@ body {
     width: 30px;
     height: 30px;
     flex-shrink: 0;
-    padding-right: 20px;
-    padding-top: 40px;
+    margin-right: 5vh;
+    margin-top: 10vh;
 }
 
 .image {
@@ -37,7 +37,7 @@ body {
 }
 
 .description {
-    width: 167px;
+    width: 80vh;
     height: 44px;
     flex-shrink: 0;
     color: #FFF;
