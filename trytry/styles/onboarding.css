@@ -52,7 +52,7 @@ body {
 .lines {
     position: absolute;
     bottom: 20vh;
-    left: 50px;
+    
     display: flex;
     gap: 1vh;
     align-content: center;
