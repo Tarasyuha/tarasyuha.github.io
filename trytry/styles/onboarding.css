@@ -37,7 +37,7 @@ body {
 }
 
 .description {
-    width: 167px;
+    width: 80vh;
     height: 44px;
     flex-shrink: 0;
     color: #FFF;
