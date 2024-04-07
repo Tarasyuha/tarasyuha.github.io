@@ -50,10 +50,10 @@ body {
 }
 
 .lines {
-    position: absolute;
+    
     bottom: 20vh;
     
-    display: flex;
+    
     gap: 1vh;
     align-content: center;
 }
